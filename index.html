@@ -18,7 +18,7 @@
   // Meneruskan parameter link (mis. ?t=... untuk tanda tangan Tim Regional) ke Apps Script.
   var f = document.createElement('iframe');
   f.title = 'Berita Acara';
-  f.setAttribute('allow', 'clipboard-write');
+  f.setAttribute('allow', 'camera; geolocation; clipboard-write');
   f.src = window.BA_CONFIG.API_URL + (location.search || '');
   document.body.appendChild(f);
 </script>
